@@ -1,6 +1,10 @@
 #### 说明 
 
-模仿官方示例的程序，略有改造
+模仿官方示例的程序full-stack-fastapi-postgresql，略有改造
+
+1. 数据库改成mysql
+
+##### 目录说明：
 - core 公共核心配置
 - crud 增删改查
 - db 数据库操作
