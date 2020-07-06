@@ -1,0 +1,6 @@
+-r requirments.txt
+# 测试重试库
+tenacity
+# 测试库
+pytest
+pytest-cov

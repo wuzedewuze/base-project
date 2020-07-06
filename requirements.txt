@@ -1,0 +1,11 @@
+-i  https://pypi.douban.com/simple
+fastapi
+pydantic~=1.5.1
+# mysql数据库相关
+pymysql
+sqlalchemy
+# 登陆安全相关
+python-multipart
+pyjwt
+python-jose
+passlib[bcrypt]
