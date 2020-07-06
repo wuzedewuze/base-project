@@ -1,6 +1,6 @@
 -r requirments.txt
 # 测试重试库
-tenacity
+pydantic~=1.5.1
 # 测试库
 pytest
 pytest-cov
