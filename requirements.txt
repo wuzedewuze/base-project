@@ -10,3 +10,10 @@ python-jose
 passlib[bcrypt]
 
 tenacity~=6.2.0
+mypy
+
+# 测试重试库
+pydantic
+# 测试库
+pytest
+pytest-cov
