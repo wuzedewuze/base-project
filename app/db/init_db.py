@@ -5,7 +5,7 @@ from app.core.config import settings
 from app.db import base  # noqa: F401
 from app.db import session
 from app.db.base_class import Base
-from sqlalchemy.ext.declarative import declarative_base
+import datetime
 
 
 # make sure all SQL Alchemy models are imported (app.db.base) before initializing DB
@@ -26,5 +26,6 @@ def init_db(db: Session) -> None:
             username=settings.FIRST_SUPERUSER,
             password=settings.FIRST_SUPERUSER_PASSWORD,
             is_superuser=True,
+            dis_active_time=datetime.datetime.now()+datetime.timedelta(settings.FIRST_SUPERUSER_ACTIVE_TIME)
         )
         user = crud.user.create(db, obj_in=user_in)  # noqa: F841

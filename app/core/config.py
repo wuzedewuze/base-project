@@ -19,6 +19,10 @@ class Settings(BaseConfig):
     # 初始化的超级管理员账号秘密
     FIRST_SUPERUSER: str = "wuyang"
     FIRST_SUPERUSER_PASSWORD: str = "wuyang123"
+    FIRST_SUPERUSER_ACTIVE_TIME: int = 36500
+
+    # 用户默认有效时间3650天
+    USER_ACTIVE_DEFAULT_TIME: int = 3650
 
     # 设置区分大小写
     class Config:
