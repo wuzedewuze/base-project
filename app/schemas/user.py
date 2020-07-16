@@ -16,8 +16,7 @@ class UserBase(BaseModel):
 
 # 通过AIP接受的创建属性
 class UserCreate(UserBase):
-    email = EmailStr
-    password = Optional[str] = None
+    password: Optional[str] = None
 
 
 # 通过AIP接受的更新属性
