@@ -20,6 +20,10 @@ def init_db(db: Session) -> None:
     # 创建表
     Base.metadata.create_all(bind=session.engine)
 
+   # create roles
+
+
+    # create super user
     user = crud.user.get_by_username(db, username=settings.FIRST_SUPERUSER)
     if not user:
         user_in = schemas.UserCreate(
@@ -29,3 +33,32 @@ def init_db(db: Session) -> None:
             dis_active_time=datetime.datetime.now()+datetime.timedelta(settings.FIRST_SUPERUSER_ACTIVE_TIME)
         )
         user = crud.user.create(db, obj_in=user_in)  # noqa: F841
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

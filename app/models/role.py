@@ -9,6 +9,6 @@ if TYPE_CHECKING:
     pass
 
 
-class Rolse(Base):
+class Role(Base):
     id = Column(Integer, primary_key=True, index=True)
-    rolse_name = Column(String(100), unique=True)
+    role_name = Column(String(100), unique=True)
